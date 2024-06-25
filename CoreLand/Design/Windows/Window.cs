@@ -13,9 +13,12 @@
  * limitations under the License.
  */
 
+using System.Windows.Controls;
+
 namespace CoreLand.Design.Windows
 {
-    public class Window
+    public class Window : ContentControl, IWindow
     {
+        string IWindow.Title { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     }
 }

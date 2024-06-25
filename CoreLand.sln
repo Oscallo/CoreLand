@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLand", "CoreLand\CoreLand.csproj", "{89DE301F-A709-48E6-AB93-EC4AF50F492C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLand.Demo", "CoreLand.Demo\CoreLand.Demo.csproj", "{DC2ED13D-B584-493C-84E8-4A57B848C4E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89DE301F-A709-48E6-AB93-EC4AF50F492C} = {89DE301F-A709-48E6-AB93-EC4AF50F492C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

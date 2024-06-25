@@ -18,6 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Design\CustomControls\" />
     <Folder Include="Design\MessageBoxes\" />
   </ItemGroup>
 

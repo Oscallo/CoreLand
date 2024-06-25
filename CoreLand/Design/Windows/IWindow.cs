@@ -13,10 +13,13 @@
  * limitations under the License.
  */
 
+using CoreLand.Design.Windows.Args;
 using System.Windows;
 
 namespace CoreLand.Design.Windows
 {
+    public delegate void NotifyTitleChangedEventHandler(object sender, TitleChangedEventArgs eTitleChangedArgs);
+
     public interface IWindow
     {
         public double Height { get; set; }
@@ -30,6 +33,8 @@ namespace CoreLand.Design.Windows
         public double MinWidth { get; set; }
 
         public double MaxWidth { get; set; }
+
+        public event NotifyTitleChangedEventHandler? TitleChanged;
 
         public string Title { get; set; }
 

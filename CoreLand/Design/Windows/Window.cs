@@ -13,15 +13,15 @@
  * limitations under the License.
  */
 
+using CoreLand.Design.Windows.Args;
+using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace CoreLand.Design.Windows
 {
     public class Window : ContentControl, IWindow
     {
-        string IWindow.Title { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
-
-
         static Window() 
         {
         
@@ -32,8 +32,41 @@ namespace CoreLand.Design.Windows
         
         }
 
-        void IWindow.Show() => throw new System.NotImplementedException();
+        public event NotifyTitleChangedEventHandler? TitleChanged;
 
-        void IWindow.Hide() => throw new System.NotImplementedException();
+        public string Title 
+        {
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
+        }
+
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register(nameof(IWindow.Title), typeof(string), typeof(Window),
+                                                                  new FrameworkPropertyMetadata(string.Empty, new PropertyChangedCallback(OnTitleChangedCallback)), new ValidateValueCallback(ValidateText));
+
+        private static void OnTitleChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs eventArgsDP) 
+        {
+            Window window = (Window)dependencyObject;
+
+            window.OnTitleChanged(TitleChangedEventArgs.From(eventArgsDP));
+        }
+
+        private static bool ValidateText(object value) 
+        {
+            if (value == null) { return false; }
+            if (value is not string) { return false; }
+            return true;
+        }
+
+        protected virtual void OnTitleChanged(TitleChangedEventArgs e)
+        {
+            if (this.TitleChanged != null)
+            {
+                this.TitleChanged?.Invoke(this, e);
+            }
+        }
+
+        void IWindow.Show() => throw new NotImplementedException();
+
+        void IWindow.Hide() => throw new NotImplementedException();
     }
 }

@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Design\Windows\" />
+    <Folder Include="Design\MessageBoxes\" />
+  </ItemGroup>
+
 </Project>

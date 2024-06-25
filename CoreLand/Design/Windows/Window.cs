@@ -31,5 +31,8 @@ namespace CoreLand.Design.Windows
         {
         
         }
+
+        void IWindow.Show() => throw new System.NotImplementedException();
+        void IWindow.Hide() => throw new System.NotImplementedException();
     }
 }

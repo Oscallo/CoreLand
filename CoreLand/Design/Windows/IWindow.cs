@@ -36,5 +36,9 @@ namespace CoreLand.Design.Windows
         public object Content { get; set; }
 
         public Visibility Visibility { get; set; }
+
+        public void Show();
+
+        public void Hide();
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLand", "CoreLand\CoreLand.csproj", "{89DE301F-A709-48E6-AB93-EC4AF50F492C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLand.WorkArea", "CoreLand.WorkArea\CoreLand.WorkArea.csproj", "{FE5FDD23-0D6B-4958-9C5B-7594977BEDEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLand.Demo", "CoreLand.Demo\CoreLand.Demo.csproj", "{DC2ED13D-B584-493C-84E8-4A57B848C4E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{89DE301F-A709-48E6-AB93-EC4AF50F492C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89DE301F-A709-48E6-AB93-EC4AF50F492C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89DE301F-A709-48E6-AB93-EC4AF50F492C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE5FDD23-0D6B-4958-9C5B-7594977BEDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE5FDD23-0D6B-4958-9C5B-7594977BEDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE5FDD23-0D6B-4958-9C5B-7594977BEDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE5FDD23-0D6B-4958-9C5B-7594977BEDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2ED13D-B584-493C-84E8-4A57B848C4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2ED13D-B584-493C-84E8-4A57B848C4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2ED13D-B584-493C-84E8-4A57B848C4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2ED13D-B584-493C-84E8-4A57B848C4E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

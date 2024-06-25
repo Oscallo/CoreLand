@@ -1,7 +1,7 @@
-﻿<Application x:Class="CoreLand.WorkArea.App"
+﻿<Application x:Class="CoreLand.Demo.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:CoreLand.WorkArea"
+             xmlns:local="clr-namespace:CoreLand.Demo"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

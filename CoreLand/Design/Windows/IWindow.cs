@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+using System.Windows;
+
 namespace CoreLand.Design.Windows
 {
     public interface IWindow
@@ -32,5 +34,7 @@ namespace CoreLand.Design.Windows
         public string Title { get; set; }
 
         public object Content { get; set; }
+
+        public Visibility Visibility { get; set; }
     }
 }
